@@ -4,10 +4,6 @@ class Backgammon:
 	START_BOARD = [0, 2, 0, 0, 0, 0, -5, 0, -3, 0, 0, 0, 5, -5, 0, 0, 0, 3, 0, 5, 0, 0, 0, 0, -2, 0]
 	
 	def __init__(self, start_board=START_BOARD, white_to_move=True):
-		"""
-		white, positive, white moves to back of list,
-		self.board positive is white
-		"""
 		self.board = start_board
 		self.white_to_move = white_to_move
 		
@@ -101,7 +97,6 @@ class Backgammon:
 		return has_checkers and (not blocked)
 		
 	def generate_valid_moves(self, dice : list) -> list:
-		""" Return list of valid (start, end) moves in current position. """
 		on_bar = self.white_on_bar if self.white_to_move else self.black_on_bar
 		bar_index = self.bar_white_idx if self.white_to_move else self.bar_black_idx 
 		possible_start_indices = [bar_index] if on_bar else (self.white_indices if self.white_to_move else self.black_indices)
@@ -112,7 +107,6 @@ class Backgammon:
 		return valid_moves
 
 	def generate_valid_turns(self, dice : list) -> list:
-		""" Return list of valid [(start, end), (start, end)] turns for white in current position. """
 		def move_die(move):
 			def keep_in_range(index):
 				return max(min(index, self.bar_white_idx), self.bar_black_idx)
@@ -152,7 +146,6 @@ class Backgammon:
 		
 	def __str__(self):
 		def tile_to_string(val : int) -> str:
-			""" Return three-character string representation """
 			if val == 0:
 				return "   "
 			if val > 0:
