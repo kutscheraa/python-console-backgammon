@@ -1,4 +1,4 @@
-#Vrhcáby
 Spouští se pomoci main.py
 Hráč zadává počáteční index (kámen kterým hýbe) a konečný index (číslo které hodil kostkou).
+GUI se updatuje po odehrání dvou, či čtyř pohybů(při hodu stejné dvojice).
 AI, JSON save není implementováno
