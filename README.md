@@ -1,4 +1,3 @@
-#backgammon
 **College summer semester project**
 
 **Class: Algorithmization and programming**
