@@ -1,4 +1,6 @@
-Spouští se pomocí main.py
-Hráč zadává počáteční index (kámen kterým hýbe) a konečný index (číslo které hodil kostkou).
-GUI se updatuje po odehrání dvou, či čtyř pohybů(při hodu stejné dvojice).
-AI, JSON save, statistky chybí.
+College summer semester project
+
+Launcher main.py.
+The player enters the initial index (the stone they are moving) and the final index (the number they rolled on the dice).
+The GUI updates after playing two or four moves (when rolling the same pair).
+AI, JSON save, and statistics are missing.
