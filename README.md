@@ -1,4 +1,4 @@
-**College summer semester project**
+**University summer semester project**
 
 **Class: Algorithmization and programming 2**
 
